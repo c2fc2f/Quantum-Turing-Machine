@@ -1,0 +1,45 @@
+[package]
+name = "qtm"
+version = "0.1.0"
+edition = "2024"
+authors = ["c2fc2f <contact@c2fc2f.com>"]
+description = ""
+readme = "README.md"
+repository = "https://github.com/c2fc2f/kag"
+license = "MIT"
+keywords = [
+  "knowledge-graph",
+  "rag",
+  "generation",
+  "benchmark",
+  "neo4j"
+]
+categories = [
+  "command-line-utilities",
+  "database",
+  "development-tools::evaluation"
+]
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+
+[lints.rust]
+missing_docs = "warn"
+
+[lints.clippy]
+missing_docs_in_private_items = "warn"
+missing_errors_doc = "warn"
+missing_panics_doc = "warn"
+
+[dependencies]
+clap = { version = "4", features = [ "derive" ] }
+clap_complete = "4"
+
+[build-dependencies]
+clap = { version = "4", features = [ "derive", "string" ] }
+clap_mangen = "0.3"
+clap_complete = "4"
+
