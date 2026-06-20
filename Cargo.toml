@@ -3,21 +3,16 @@ name = "qtm"
 version = "0.1.0"
 edition = "2024"
 authors = ["c2fc2f <contact@c2fc2f.com>"]
-description = ""
+description = "Binary to simulates Quantum Turing Machines (QTMs) and converts them to equivalent quantum circuits"
 readme = "README.md"
-repository = "https://github.com/c2fc2f/kag"
+repository = "https://github.com/c2fc2f/Quantum-Turing-Machine"
 license = "MIT"
 keywords = [
-  "knowledge-graph",
-  "rag",
-  "generation",
-  "benchmark",
-  "neo4j"
+  "turing-machine",
+  "quantum",
 ]
 categories = [
   "command-line-utilities",
-  "database",
-  "development-tools::evaluation"
 ]
 
 [profile.release]

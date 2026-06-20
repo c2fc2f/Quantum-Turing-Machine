@@ -10,7 +10,7 @@ use clap::{Parser, Subcommand};
 /// Reference:
 ///   Molina A, Watrous J. "Revisiting the simulation of quantum Turing
 ///   machines by quantum circuits." Proc. R. Soc. A 475:20180767 (2019).
-///   https://doi.org/10.1098/rspa.2018.0767
+///   <https://doi.org/10.1098/rspa.2018.0767>
 #[derive(Parser, Debug)]
 #[command(version, about, long_about)]
 pub struct Args {
